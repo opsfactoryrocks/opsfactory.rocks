@@ -1,0 +1,25 @@
+title: OpsFactory
+email: hello@opsfactory.rocks
+description: "Made with love in Brisbane and Basingstoke"
+baseurl: ""
+url: "https://opsfactory.rocks"
+twitter_username: opsfactory
+github_username:  opsfactoryrocks
+
+external_links:
+  - title: "Blog"
+    url: "https://blog.opsfactory.rocks"
+  - title: "YouTube"
+    url: "https://www.youtube.com/channel/UCp5CE3BD-fHc8rFqRJQklqA"
+
+# We have a collection of features per product
+collections:
+  - features
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

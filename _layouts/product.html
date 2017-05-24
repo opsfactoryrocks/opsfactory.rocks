@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main>
+  {% for feature in site.features %}
+  {% if feature.product == page.product %}
+    <hr id='{{ feature.id }}'>
+
+    <section>
+      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image }}'>
+      <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
+      <div class='lead'>{{ feature.content }}</div>
+    </section>
+  {% endif %}
+  {% endfor %}
+
+  <hr>
+</main>
