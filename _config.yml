@@ -11,11 +11,11 @@ mailchimp_user_id: "6e1e1fe7c24f8d41d7cc01754"
 external_links:
   - title: "Blog"
     url: "https://blog.opsfactory.rocks"
-    description: "Liquid drops of truth from the OpsMasters in residence"
+    description: "In-depth articles on Operations and Infrastructure"
     image: "img/blog.png"
   - title: "YouTube"
     url: "https://www.youtube.com/channel/UCp5CE3BD-fHc8rFqRJQklqA"
-    description: "Get excited with us through the power of video"
+    description: "DevOps News, introductions and discussions"
     image: "img/youtube.png"
 
 # We have a collection of features per product
