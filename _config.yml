@@ -1,7 +1,7 @@
 title: OpsFactory
 author: OpsFactory
 email: hello@opsfactory.rocks
-description: "Making DevOps Simple"
+description: "DevOps Made Simple"
 baseurl: ""
 url: "https://opsfactory.rocks"
 twitter_username: opsfactory
@@ -12,11 +12,11 @@ external_links:
   - title: "Blog"
     url: "https://blog.opsfactory.rocks"
     description: "Liquid drops of truth from the OpsMasters in residence"
-    image: "img/crilly.png"
+    image: "img/blog.png"
   - title: "YouTube"
     url: "https://www.youtube.com/channel/UCp5CE3BD-fHc8rFqRJQklqA"
     description: "Get excited with us through the power of video"
-    image: "img/james.png"
+    image: "img/youtube.png"
 
 # We have a collection of features per product
 collections:
