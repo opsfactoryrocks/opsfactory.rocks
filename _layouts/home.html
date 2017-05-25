@@ -49,7 +49,7 @@ layout: default
       {% endfor %}
       {% for path in page_paths %}
       {% assign my_page = site.pages | where: "path", path | first %}
-      {% if my_page.url != "/" %}
+      {% if my_page.status == "live" %}
       <div class="col-lg-4">
         <div class="card">
           <div class="view overlay hm-white-slight">
@@ -60,7 +60,7 @@ layout: default
           </div>
           <div class="card-block">
             <a href="{{ my_page.url }}">
-              <h4 class="card-title">{{ my_page.title }} - <code>{{ my_page.url}}</code></h4>
+              <h4 class="card-title">{{ my_page.title }}</h4>
             </a>
             <p class="card-text">{{ my_page.description }}</p>
           </div>
