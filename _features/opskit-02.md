@@ -1,7 +1,6 @@
 ---
-heading: The Second Heading
-subheading: Is Pretty Cool Too.
-image: "http://placehold.it/500x500"
+title: The Second Heading
+image: "img/crilly.png"
 product: opskit
 ---
 

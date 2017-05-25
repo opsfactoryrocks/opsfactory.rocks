@@ -1,7 +1,6 @@
 ---
-heading: This First Heading
-subheading: Will Catch Your Eye
-image: "http://placehold.it/500x500"
+title: This First Heading
+image: "img/james.png"
 product: opskit
 ---
 

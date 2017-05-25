@@ -1,16 +1,22 @@
 title: OpsFactory
+author: OpsFactory
 email: hello@opsfactory.rocks
-description: "Made with love in Brisbane and Basingstoke"
+description: "Making DevOps Simple"
 baseurl: ""
 url: "https://opsfactory.rocks"
 twitter_username: opsfactory
 github_username:  opsfactoryrocks
+mailchimp_user_id: "6e1e1fe7c24f8d41d7cc01754"
 
 external_links:
   - title: "Blog"
     url: "https://blog.opsfactory.rocks"
+    description: "Liquid drops of truth from the OpsMasters in residence"
+    image: "img/crilly.png"
   - title: "YouTube"
     url: "https://www.youtube.com/channel/UCp5CE3BD-fHc8rFqRJQklqA"
+    description: "Get excited with us through the power of video"
+    image: "img/james.png"
 
 # We have a collection of features per product
 collections:
@@ -18,8 +24,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock

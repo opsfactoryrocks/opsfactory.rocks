@@ -1,26 +1,80 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+<div class="container">
+  <div class="row wow fadeIn" data-wow-delay="0.2s">
+    <div class="col-lg-7">
+      <div class="view overlay hm-white-light z-depth-1-half">
+        <img src="{{ page.image }}" class="img-fluid " alt="">
+        <div class="mask"></div>
+      </div>
+      <br>
+    </div>
+    <div class="col-lg-5">
+      <h2 class="h2-responsive">{{ page.title }}</h2>
+      <hr>
+      <p>{{ content }}</p>
+    </div>
+  </div>
+  <hr class="extra-margins">
+  <div class="row">
+    {% assign count = 0 %}
+    {% for link in site.external_links %}
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="view overlay hm-white-slight">
+          <img src="{{ link.image }}" class="img-fluid" alt="">
+            <a href="{{ link.url }}">
+              <div class="mask"></div>
+            </a>
+          </div>
+          <div class="card-block">
+            <a href="{{ link.url }}">
+              <h4 class="card-title">{{ link.title }}</h4>
+            </a>
+            <p class="card-text">{{ link.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% assign count_modulus = count | modulo: 3 %}
+      {% if count_modulus == 0 %}
+    </div>
+    <br/>
+    <hr class="extra-margins">
+    <div class="row">
+      {% endif %}
+      {% endfor %}
+      {% for path in page_paths %}
+      {% assign my_page = site.pages | where: "path", path | first %}
+      {% if my_page.url != "/" %}
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="view overlay hm-white-slight">
+            <img src="{{ my_page.image }}" class="img-fluid" alt="">
+            <a href="{{ my_page.url }}">
+              <div class="mask"></div>
+            </a>
+          </div>
+          <div class="card-block">
+            <a href="{{ my_page.url }}">
+              <h4 class="card-title">{{ my_page.title }}</h4>
+            </a>
+            <p class="card-text">{{ my_page.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% assign count_modulus = count | modulo: 3 %}
+      {% if count_modulus == 0 %}
+    </div>
+    <br/>
+    <hr class="extra-margins">
+    <div class="row">
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+  </div>
 </div>

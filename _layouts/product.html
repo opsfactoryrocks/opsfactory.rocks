@@ -1,18 +1,62 @@
 ---
 layout: default
 ---
-<main>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="h1-responsive">{{ page.title }}
+        <small class="text-muted">{{ page.description }}</small>
+      </h1>
+    </div>
+  </div>
+  <hr>
   {% for feature in site.features %}
   {% if feature.product == page.product %}
-    <hr id='{{ feature.id }}'>
-
-    <section>
-      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image }}'>
-      <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
-      <div class='lead'>{{ feature.content }}</div>
-    </section>
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="view overlay hm-white-light z-depth-1-half">
+        <img src="{{ feature.image }}" class="img-fluid" alt="">
+        <div class="mask"></div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <h2 class="post-title">{{ feature.title }}</h2>
+      <p class="lead">{{ feature.content }}</p>
+    </div>
+  </div>
+  <hr class="extra-margin">
   {% endif %}
   {% endfor %}
-
-  <hr>
-</main>
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="card">
+        <div class="card-block">
+          <div class="text-center">
+            <h3><i class="fa"></i>Sign up for updates</h3>
+            <hr class="mt-2 mb-2">
+          </div>
+          <form action="//rocks.us15.list-manage.com/subscribe/post?u={{ site.mailchimp_user_id }}&amp;id={{ page.mailchimp_list_id }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="md-form">
+              <i class="fa fa-envelope prefix"></i>
+              <input type="email" name="EMAIL" id="form2" class="form-control">
+              <label for="form2">Your email address</label>
+            </div>
+            <div class="text-center">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_{{ site.mailchimp_user_id }}_{{ page.mailchimp_list_id }}" tabindex="-1" value=""></div>
+              <button class="btn btn-deep-orange" type="submit" name="subscribe" id="mc-embedded-subscribe">Keep me updated</button>
+            </div>
+          </form>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <h2 class="post-title">Interested?</h2>
+      <p class="lead">This will add you to a mailing list specific to {{ page.title }}, and we'll be in touch to keep you updated about this product. We do not share your email address with any third parties.</p>
+    </div>
+  </div>
+</div>

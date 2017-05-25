@@ -1,7 +1,6 @@
 ---
-heading: The Third Heading
-subheading: Will Seal the Deal.
-image: "http://placehold.it/500x500"
+title: The Third Heading
+image: "img/james.png"
 product: opskit
 ---
 
