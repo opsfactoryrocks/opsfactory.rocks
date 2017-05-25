@@ -1,7 +1,7 @@
 ---
-title: This First Heading
-image: "img/james.png"
+title: Effortlessly deploy proper infrastructure
+image: "img/opskit-feature1.png"
 product: opskit
 ---
 
-Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+Don't deploy your WordPress site on a single server - OpsKit allows you to effortlessly deploy expertly architected infrastructure. Separate out components for efficiency, security and scale.

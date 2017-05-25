@@ -1,7 +1,7 @@
 ---
-title: The Third Heading
-image: "img/james.png"
+title: All with a click of a mouse
+image: "img/opskit-feature03.png"
 product: opskit
 ---
 
-Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+OpsKit is designed to ask you just want it needs to know, and then get on with the rest. It's been designed by experts in the field, who have already made the hard decisions. Just use the intuitive interface to deploy and control your infrastructure.
