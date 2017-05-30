@@ -1,6 +1,6 @@
 ---
 title: Autoscale like a pro
-image: "img/opskit-feature02.png"
+image: "/img/opskit-feature02.png"
 product: opskit
 ---
 

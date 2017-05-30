@@ -1,6 +1,6 @@
 ---
 title: All with a click of a mouse
-image: "img/opskit-feature03.png"
+image: "/img/opskit-feature03.png"
 product: opskit
 ---
 

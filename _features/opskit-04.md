@@ -1,6 +1,6 @@
 ---
 title: Optimised for use with WordPress
-image: "img/opskit-feature04.png"
+image: "/img/opskit-feature04.png"
 product: opskit
 ---
 

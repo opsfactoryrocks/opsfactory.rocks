@@ -3,20 +3,21 @@ author: OpsFactory
 email: hello@opsfactory.rocks
 description: "DevOps Made Simple"
 baseurl: ""
-url: "https://opsfactory.rocks"
+url: "https://www.opsfactory.rocks"
 twitter_username: opsfactory
 github_username:  opsfactoryrocks
 mailchimp_user_id: "6e1e1fe7c24f8d41d7cc01754"
+google_analytics: "UA-100161720-1"
 
 external_links:
   - title: "Blog"
     url: "https://blog.opsfactory.rocks"
     description: "In-depth articles on Operations and Infrastructure"
-    image: "img/blog.png"
+    image: "/img/blog.png"
   - title: "YouTube"
     url: "https://www.youtube.com/channel/UCp5CE3BD-fHc8rFqRJQklqA"
     description: "DevOps News, introductions and discussions"
-    image: "img/youtube.png"
+    image: "/img/youtube.png"
 
 # We have a collection of features per product
 collections:
@@ -24,6 +25,7 @@ collections:
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
 
 exclude:
   - Gemfile

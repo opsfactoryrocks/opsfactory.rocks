@@ -1,0 +1,8 @@
+s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+s3_bucket: www.opsfactory.rocks
+s3_endpoint: eu-west-2
+max_age: 600
+cloudfront_distribution_id: E9TG1MUTVQET4
+cloudfront_wildcard_invalidation: true
+cloudfront_invalidate_root: true

@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse" id="navbarNav1">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ "/" | relative_url }}">Home</a>
+            <a class="nav-link" href="{{ "/" }}">Home</a>
           </li>
           {% for link in site.external_links %}
           <li class="nav-item">
@@ -24,7 +24,7 @@
           {% assign my_page = site.pages | where: "path", path | first %}
           {% if my_page.status == "live" %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="nav-link" href="{{ my_page.url }}">{{ my_page.title | escape }}</a>
           </li>
           {% endif %}
           {% endfor %}

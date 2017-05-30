@@ -1,6 +1,6 @@
 ---
 title: Effortlessly deploy proper infrastructure
-image: "img/opskit-feature1.png"
+image: "/img/opskit-feature1.png"
 product: opskit
 ---
 
